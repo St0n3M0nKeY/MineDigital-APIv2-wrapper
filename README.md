@@ -1,9 +1,8 @@
 # Mine Digital Exchange - Python client
 Python client for Mine Digital Exchange API version 2 https://minedigital.exchange/
 
----
-A simple python client for Mine Digital Exchange API version 2. Not all API calls have been implemented. Official documentation can be found at: https://bctv2.docs.apiary.io/#
----
+A simple python client for Mine Digital Exchange API version 2. Not all API calls have been implemented. Official documentation can be found at: https://minedigitalexchange.docs.apiary.io
+
 ## Installation
 Clone the Git repository:
 ```
