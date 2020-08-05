@@ -49,7 +49,7 @@ class MineAPIv2:
     ##########################################
     def get_money_info(self):
         '''
-        https://bctv2.docs.apiary.io/#reference/account/moneyinfo
+        #reference/account/moneyinfo
         This method returns the balance, available balance, 
         daily withdrawal limit and maximum withdraw for every 
         currency in your account.
@@ -61,7 +61,7 @@ class MineAPIv2:
 
     def get_wallet_history(self, currency_pair, page_num, from_timestamp, to_timestamp):
         '''
-        https://bctv2.docs.apiary.io/#reference/account/moneywallethistory
+        #reference/account/moneywallethistory
         Wallet History
         A full history of the transaction in each of your wallet. 
         Transactions include buy, sell, deposit, withdrawal and fees.
@@ -77,7 +77,7 @@ class MineAPIv2:
 
     def money_order_add_limit(self, currency_pair, price, amount, side):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/currencypairmoneyorderadd
+        #reference/trade/currencypairmoneyorderadd
         Place a limit order
         '''
         path = f"{currency_pair}/money/order/add"
@@ -90,7 +90,7 @@ class MineAPIv2:
 
     def money_order_add_market(self, currency_pair, amount, side):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/currencypairmoneyorderadd
+        #reference/trade/currencypairmoneyorderadd
         Place a market order
         '''
         path = f"{currency_pair}/money/order/add"
@@ -102,7 +102,7 @@ class MineAPIv2:
 
     def order_cancel(self, currency_pair, order_id):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/currencypairmoneyordercancel
+        #reference/trade/currencypairmoneyordercancel
         Cancel an open order
         '''
         path = f"{currency_pair}/money/order/cancel"
@@ -113,7 +113,7 @@ class MineAPIv2:
 
     def order_result(self, currency_pair):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/currencypairmoneyorders
+        #reference/trade/currencypairmoneyorders
         Order Result
         Enquire the result of a completed order. 
         Get detail information such as average cost, 
@@ -126,7 +126,7 @@ class MineAPIv2:
 
     def open_orders(self, currency_pair):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/currencypairmoneyorders
+        #reference/trade/currencypairmoneyorders
         Open orders
         Returns limit orders in pending state submission to the orderbook, or already active (they may be partially filled).
         Note you could have market orders in state pending that would not be retrieved by this request.
@@ -138,7 +138,7 @@ class MineAPIv2:
 
     def request_for_quote(self, currency_pair, side, amount):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/currencypairmoneyorderquote
+        #reference/trade/currencypairmoneyorderquote
         Order Quote.
         Quote an estimated amount to buy/sell a currency pair
         '''
@@ -151,7 +151,7 @@ class MineAPIv2:
 
     def get_executed_trades(self, from_timestamp, to_timestamp):
         '''
-        https://bctv2.docs.apiary.io/#reference/trade/moneytradelist
+        #reference/trade/moneytradelist
         Get a list of executed trade
         '''
         path = "money/trade/list"
@@ -166,7 +166,7 @@ class MineAPIv2:
     ##########################################
     def get_market_data(self, currency_pair):
         '''
-        https://bctv2.docs.apiary.io/#reference/market-data
+        #reference/market-data
         Get the most recent ticker for a currency pair
         '''
         path = f"{currency_pair}/money/ticker"
@@ -174,7 +174,7 @@ class MineAPIv2:
 
     def get_orderbook_data(self, currency_pair):
         '''
-        https://bctv2.docs.apiary.io/#reference/market-data/currencypairmoneydepthfull
+        #reference/market-data/currencypairmoneydepthfull
         Get a complete copy of the order book on a particular currency pair.
         '''
         path = f"{currency_pair}/money/depth/full"
